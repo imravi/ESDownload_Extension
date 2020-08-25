@@ -1,0 +1,78 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+::ng-deep .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+  background-color: #673ab7; /*replace with your color*/
+}
+
+::ng-deep .mat-slide-toggle.mat-checked .mat-slide-toggle-bar
+{
+  background-color: #8b6cc2; /*replace with your color*/
+}
+/* Structure */
+.example-container {
+  position: relative;
+  min-height: 200px;
+  width: 90%;
+  margin: 3%;
+  margin-bottom: 9%;
+}
+
+.example-table-container {
+  position: relative;
+  max-height: 400px;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+}
+
+
+/* Column Widths */
+.mat-table {
+  overflow-x: scroll;
+}
+
+.mat-cell,
+.mat-header-cell {
+word-wrap: initial;
+display: table-cell;
+padding: 0px 10px;
+line-break: unset;
+width: 100%;
+white-space: nowrap;
+overflow: hidden;
+vertical-align: middle;
+}
+.mat-header-cell{
+  font-weight: bold;
+}
+.mat-row,
+.mat-header-row {
+display: table-row;
+}
+
+// end
+.indexto-search{
+  width: 50%;
+  margin-left: 5%;
+}
+.search-text
+{
+  width: 50%;
+  margin-left: 5%;
+}
+
+.slide-bar
+{
+  margin-left: 5%;
+}
+
+.search-button
+{
+  margin-left: 4%;
+  width: 7%;
+}
+tr.example-element-row:not(.example-expanded-row):hover {
+  background: whitesmoke;
+}

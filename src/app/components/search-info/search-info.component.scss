@@ -1,0 +1,22 @@
+@import '../search-download/search-download.component.scss';
+.hostdiv{
+  margin: 2%;
+}
+.hostinput{
+  width: 50%;
+  height: 10%;
+}
+.hostbutton{
+  margin-left: 2%;
+}
+.host{
+  margin-top: 2%;
+  font-weight: bold;
+}
+.error-class
+{
+  width: 50%;
+  margin-left: 5%;
+  margin-top: 3%;
+  background-color: rgba(15, 70, 221, 0.068);
+}

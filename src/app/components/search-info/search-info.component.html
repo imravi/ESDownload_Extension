@@ -1,0 +1,27 @@
+<ng-container>
+  <ng-template [ngIf]="isloading">
+    <progress-spinner></progress-spinner>
+  </ng-template>
+</ng-container>
+<div>
+  <form [formGroup]="options">
+    <div>
+      <mat-form-field class='search-text host' appearance="fill">
+        <input matInput disabled [(ngModel)]="host" [ngModelOptions]="{standalone: true}" [placeholder]="placeholder">
+      </mat-form-field>
+      <!-- <button class="search-button" name="connect" (click)="connect()" mat-raised-button color="primary">Connect</button> -->
+    </div>
+    <div>
+      <mat-form-field class='search-text' appearance="fill">
+        <mat-select required (selectionChange)="selectformatChanged()" [(ngModel)]="selectedformat" [ngModelOptions]="{standalone: true}">
+          <mat-option *ngFor="let format of formats" [value]="format">{{format|uppercase}}</mat-option>
+        </mat-select>
+        <mat-label>
+          <i>Select Format</i>
+        </mat-label>
+
+      </mat-form-field>
+      <button class='search-button' name="data-download" [disabled]="!selectedformat || !disabledownload" mat-raised-button color="primary" (click)="downloadData()">Download</button>
+    </div>
+  </form>
+</div>

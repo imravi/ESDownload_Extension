@@ -1,0 +1,16 @@
+<nav class="navbar-header">
+  <a routerLink='/home' mat-button routerLinkActive="active">Home</a>
+  <button mat-button [matMenuTriggerFor]="belowMenu">Download</button>
+  <mat-menu #belowMenu="matMenu" yPosition="below">
+    <a routerLink='/bysearch' routerLinkActive="active">
+      <button mat-menu-item>
+        By Search
+      </button>
+    </a>
+    <a routerLink='/byindex' routerLinkActive="active">
+      <button mat-menu-item>By Index</button>
+    </a>
+  </mat-menu>
+
+</nav>
+<router-outlet></router-outlet>

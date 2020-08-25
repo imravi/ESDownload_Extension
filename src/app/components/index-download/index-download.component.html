@@ -1,0 +1,10 @@
+<div>
+  <search-info [page]='page' [disabledownload]='disabledownload' [indexcountsmap]='indexcountsmap' searchtext="*">
+  </search-info>
+</div>
+<label id="example-radio-group-label">Select Index to download data from:</label>
+<mat-radio-group aria-labelledby="example-radio-group-label" class="example-radio-group" [(ngModel)]="indexselected">
+  <mat-radio-button class="example-radio-button" *ngFor="let index of indices" [value]="index" (change)="sendindex($event.value)">
+    {{index}}
+  </mat-radio-button>
+</mat-radio-group>

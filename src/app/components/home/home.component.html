@@ -1,0 +1,25 @@
+<div class='home-tabs'>
+  <mat-tab-group mat-align-tabs="start">
+    <mat-tab label="Purpose">
+      <ul class='purpose-section'>
+        <li>The main purpose of developing this application is to help users download Elasticseach data.</li>
+        <br>
+        <li>More focus is given on downloading data rather than making the search.</li>
+        <br>
+        <li>Having said above users will be able to make search and download data they have searched.</li>
+      </ul>
+    </mat-tab>
+    <mat-tab label="Assumptions">
+      <ul class='purpose-section'>
+        <li>Major assumption is user connects to Elasticseach on port 9200.This will be under review,based on the use cases from user will allow user to enter host port to connect.</li>
+        <br>
+        <li>Sorting on data is based on '_id' for both Download and Search.This cannot be edited by user.</li>
+      </ul>
+    </mat-tab>
+    <mat-tab label="Usage">Content 3</mat-tab>
+    <mat-tab label="Possible Issues">
+      <p>1]since sorting is based on _id this throws this error,possible fix to use it</p>
+      <p>2]If they download or search and connectity is lost multiple popup error messages will start coming,possible fix is refresh page and do the operation back again and downloaded file may not contain accurate data.</p>
+    </mat-tab>
+  </mat-tab-group>
+</div>
